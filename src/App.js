@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import { getSpaceUntilMaxLength } from "@testing-library/user-event/dist/utils";
+import React from "react"
+import { Provider } from "react-redux";
 import './App.css';
+import Main from "./Main/main";
+import store from "./redux/store";
 
 function App() {
+
   return (
+    <Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Main />
+  
     </div>
+    </Provider>
+ 
   );
 }
 

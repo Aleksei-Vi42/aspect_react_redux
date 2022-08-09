@@ -1,0 +1,24 @@
+.main {
+display: flex;
+flex-direction: column;
+padding: 20px;
+position: static;
+}
+.content {
+    height: 80vh;
+    margin: 10px;
+    padding: 10px;
+
+}
+.controlPanel input {
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 300px;
+  
+}
+.controlPanel form{
+  padding-bottom: 20px;
+}
+.controlPanel {
+    height:min-content;
+  }
